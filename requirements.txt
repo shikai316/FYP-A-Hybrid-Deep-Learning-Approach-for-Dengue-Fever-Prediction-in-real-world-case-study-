@@ -1,0 +1,33 @@
+# Python 3.13
+#
+#   pip install -r requirements.txt
+#
+# Versions under "verified" were recovered from pip output captured in the committed
+# notebook cells, so they are what the data-preparation notebooks actually ran under.
+# The rest are minimum versions: the original training environment was not captured at
+# run time, and pinning them exactly would be a guess.
+
+# ---------------- verified ----------------
+numpy==2.3.2
+pandas==2.3.1
+openpyxl==3.1.5
+xlrd==2.0.2                 # needed to read moh_2023.xlsx.xls
+requests==2.32.4
+openmeteo-requests==1.7.5
+requests-cache==1.3.1
+retry-requests==2.0.0
+
+# ---------------- minimums ----------------
+tensorflow>=2.16
+scikit-learn>=1.4
+scipy>=1.11
+statsmodels>=0.14
+pmdarima>=2.0
+matplotlib>=3.8
+seaborn>=0.13
+psutil>=5.9
+jupyterlab>=4.0
+
+# openmeteo-requests, requests-cache and retry-requests are only needed to re-download
+# raw weather data (Singapore_Dengue_Dataset_*.ipynb). They are not required to
+# reproduce results from the committed CSVs.
