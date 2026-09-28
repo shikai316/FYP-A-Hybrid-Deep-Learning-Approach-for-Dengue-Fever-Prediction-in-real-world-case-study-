@@ -1,0 +1,9 @@
+id,ts_accuracy,cat_accuracy,combined_accuracy,b1,b2,b3,b4,b5,likert_mean,year,ml_course,attn_familiarity
+P01,1.0,1.0,1.0,4,4,4,4,3,3.8,3,True,conceptual
+P02,0.667,0.667,0.667,4,3,4,4,3,3.6,3,True,none
+P03,1.0,1.0,1.0,5,4,5,5,4,4.6,4,True,implemented
+P04,0.333,1.0,0.667,4,4,4,4,3,3.8,3,True,conceptual
+P05,1.0,1.0,1.0,4,4,4,4,4,4.0,3,True,conceptual
+P06,1.0,0.667,0.833,4,4,4,4,3,3.8,4,True,conceptual
+P07,0.333,1.0,0.667,3,4,3,4,3,3.4,3,True,none
+P08,1.0,1.0,1.0,4,4,4,4,3,3.8,3,True,conceptual

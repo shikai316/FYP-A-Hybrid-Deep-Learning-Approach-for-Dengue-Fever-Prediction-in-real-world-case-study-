@@ -1,0 +1,3 @@
+label,test,stat,p,mean_diff,ci_lo,ci_hi,supported
+H1: ILT vs SARIMA,"Wilcoxon signed-rank (one-sided), pooled over 5 horizons (n=150)",11325.0,0.0,30.014,29.593,30.436,True
+H2: ILT vs Standalone LSTM,"Wilcoxon signed-rank (one-sided), pooled over 5 horizons (n=150)",7014.0,0.005611,0.537,0.124,0.949,True

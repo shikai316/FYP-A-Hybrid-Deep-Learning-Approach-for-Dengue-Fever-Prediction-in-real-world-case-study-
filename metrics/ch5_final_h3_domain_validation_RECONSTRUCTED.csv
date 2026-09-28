@@ -1,0 +1,21 @@
+Rank,Feature,Importance,Category,Domain_validated
+1,cases_std_7,1.2841,Case History,True
+2,cases_std_14,1.2705,Case History,True
+3,cases_diff_14,1.2592,Case History,True
+4,cases_std_28,1.2155,Case History,True
+5,rain_diff,1.094,Rainfall,True
+6,cases_max_28,1.0589,Case History,True
+7,cases_max_14,0.981,Case History,True
+8,cases_max_7,0.9689,Case History,True
+9,cases_lag_28,0.958,Case History,True
+10,cases_ema_28,0.9544,Case History,True
+11,cases_lag_14,0.953,Case History,True
+12,cases_lag_21,0.953,Case History,True
+13,cases_mean_28,0.9518,Case History,True
+14,cases_7d_avg,0.9501,Case History,True
+15,cases_mean_7,0.9434,Case History,True
+16,cases_ema_14,0.9433,Case History,True
+17,cases_mean_14,0.9429,Case History,True
+18,temp_range,0.8776,Temperature,True
+19,rain_humidity,0.7891,Rainfall,True
+20,temp_diff,0.7836,Temperature,True

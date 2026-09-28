@@ -1,0 +1,5 @@
+Model,Trainable Params,"Dominant complexity (1 sample, inference)"
+"SARIMA(2,1,2)(1,0,1)_7",7 coefficients,O(p+q+P+Q) = O(7)
+"Random Forest (300 trees, depth 12)",N/A (300 trees x ~4095 nodes max),O(n_est . depth) = O(300x12)
+Standalone LSTM,"34,033",O(T.(H^2+H.F))
+"ILT (TemporalAttention, proposed)","41,745",O(T.(H^2+H.F))  [no extra T^2 term]
