@@ -1,0 +1,6 @@
+hyp,criterion,H0,Ha,test,p,decision
+H1,ILT RMSE >=20% lower than SARIMA,mu_RMSE(ILT) >= 0.80 x RMSE(SARIMA)  — improvement does not exceed 20%,mu_RMSE(ILT) <  0.80 x RMSE(SARIMA)  — improvement exceeds 20%,"One-sample one-sided t-test vs the 0.80 x SARIMA margin (30 seeds), Holm over 5 horizons",2.3777097721317053e-124,Reject H0
+H2,ILT RMSE lower than Standalone LSTM,mu(RMSE_ILT - RMSE_LSTM) = 0,mu(RMSE_ILT - RMSE_LSTM) < 0,"Paired one-sided t-test per horizon (30 seeds), Holm over 5 horizons; pooled n=150",0.005551332234424369,Reject H0
+H3,>=70% of top-20 attention features domain-validated,pi <= 0.70,pi > 0.70,"Exact one-sided binomial test (k=20, n=20)",0.0007979226629761196,Reject H0
+H4,every cost metric < 2x the Standalone LSTM and attention sub-quadratic in T,"cost ratio >= 2 on at least one metric, and/or attention exponent >= 2",all cost ratios < 2 and attention exponent < 2,One-sample one-sided t vs the 2x threshold (30 seeds) per metric; log-log OLS slope vs 2,0.040677336808211714,see per-metric table
+H5,OOS R2 > 0 on the unseen 2023-2025 holdout,R2 <= 0 at horizon h,R2 > 0 at horizon h,"Moving-block bootstrap of R2 (block=28d, B=5000)",0.0002,see per-horizon table
