@@ -9,26 +9,6 @@ read without running anything.
 
 ---
 
-# Dengue Outbreak Forecasting with a Hybrid LSTM-Transformer
-
-Forecasts daily dengue cases in Singapore 1, 7, 14, 21 and 28 days ahead,
-using weather and case data from 2013–2025.
-
-**Key results (30 seeds × 5 horizons)**
-| Model | RMSE | MAE |
-|---|---|---|
-| SARIMA | ? | ? |
-| LSTM | ? | ? |
-| **LSTM-Transformer (ours)** | ? | ? |
-
-- Temporal attention shows which weather factors and time lags matter most
-- Found and fixed a feature-leakage bug: Random Forest R² dropped from 0.93 to −0.35 after the fix
-- Runs on CPU (~42k parameters)
-
-![Forecast vs actual](plots/<你最好看的那张图>.png)
-
-Tech: Python, TensorFlow/Keras, pandas, scikit-learn, statsmodels
-
 ## 1. Environment
 
 ```
