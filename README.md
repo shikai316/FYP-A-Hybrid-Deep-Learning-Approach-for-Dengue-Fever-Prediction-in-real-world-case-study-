@@ -1,14 +1,3 @@
-# Source Code — BMCS3403 Project II
-
-**A Hybrid Deep Learning Approach for Dengue Fever Prediction in a Real-World Case Study**
-
-Ong Shi Kai · Bachelor of Data Science (Honours) · Supervisor: Ts. Dr. Tan Choo Jun
-
-Every notebook in this folder is committed **with its outputs saved**, so the results can be
-read without running anything.
-
----
-
 # Dengue Outbreak Forecasting with a Hybrid LSTM-Transformer
 
 Forecasts daily dengue cases in Singapore 1, 7, 14, 21 and 28 days ahead,
@@ -21,11 +10,24 @@ using weather and case data from 2013–2025.
 | LSTM | 32.241 | 18.461 |
 | **LSTM-Transformer (ours)** | 31.594 | 18.084 |
 
+![RMSE of all models across forecast horizons](revision/plots/B1_rmse_all_models_all_horizons.png)
+
 - Temporal attention shows which weather factors and time lags matter most
 - Found and fixed a feature-leakage bug: Random Forest R² dropped from 0.93 to −0.35 after the fix
 - Runs on CPU (~42k parameters)
 
 Tech: Python, TensorFlow/Keras, pandas, scikit-learn, statsmodels
+
+## About this project
+
+Final Year Project (BMCS3403 Project II), TAR UMT — *A Hybrid Deep Learning Approach for Dengue Fever Prediction in a Real-World Case Study*.
+
+Ong Shi Kai · Bachelor of Data Science (Honours) · Supervisor: Ts. Dr. Tan Choo Jun
+
+Every notebook in this folder is committed **with its outputs saved**, so the results can be
+read without running anything.
+
+---
 
 ## 1. Environment
 
